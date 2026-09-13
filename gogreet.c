@@ -31,7 +31,7 @@ void greet(char* name) {
 		again_greet_check_name_last:
 		if (!!name[msglen0]) { msglen0++; goto again_greet_check_name_last; }
 		msglen0++;
-		if (msglen0 + i + 1 > 19) {
+		if (msglen0 + i + 1 > 20) {
 			i = 0;
 			name = "Goodbye, ";
 			again_greet_warn_print:
