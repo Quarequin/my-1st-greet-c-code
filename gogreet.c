@@ -42,7 +42,7 @@ void greet(char* name) {
 			name = NULL;
 		}
 	}
-	if (!name) name = "World";
+	if (!name) { name = "World"; }
 	msglen0 = 0;
 	greet_try_find:
 	i = 0;
@@ -71,8 +71,7 @@ void greet(char* name) {
 	i = 0;
 	again_greet_try_print:
 	if (!!msg[i]) {
-		putchar(msg[i]);
-		i++;
+		putchar(msg[i]); i++;
 		goto again_greet_try_print;
 	}
 	putchar('\n');
